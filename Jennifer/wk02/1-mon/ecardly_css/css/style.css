@@ -1,0 +1,43 @@
+body {
+	background-color: silver;
+}
+
+.backgroundIm {
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat;
+	float: top;
+}
+
+.logotop {
+	float: right;
+}
+
+.sideList {
+	vertical-align: top;
+	display: inline-block;
+	float: right;
+}
+
+.archive, .mailing {
+	list-style-type: none;
+}
+
+
+.imagesBlock {
+	float: right
+}
+
+
+.boxOne {
+	width: 600px;
+	display: block;
+	padding: 0 120px;
+	background: white;
+	float: left;
+}
+
+.footerImages {
+	float: right;
+	clear: both;
+	padding-left: 100px;
+}

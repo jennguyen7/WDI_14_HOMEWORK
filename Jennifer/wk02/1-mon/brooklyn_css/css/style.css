@@ -1,0 +1,39 @@
+h1 {
+	color: silver;
+}
+
+.bloghero, .rings {
+	width: 950px;
+}
+
+.date {
+	color: aqua;
+}
+
+.paragraph {
+	width: 950px;
+}
+
+.random {
+	color: aqua;
+}
+
+.bottomIm {
+	display: inline-block;
+}
+
+.nyc {
+	border: 6px solid silver;
+}
+
+.huff {
+	border: 6px solid silver;
+}
+
+.lucky {
+	border: 6px solid silver;
+}
+
+.marie {
+	border: 6px solid silver;
+}
