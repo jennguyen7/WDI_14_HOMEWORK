@@ -1,9 +1,9 @@
 body {
 	background-color: silver;
+	background-image: url("../images/background.jpg")
 }
 
 .backgroundIm {
-	background-image: url("../images/background.jpg");
 	background-repeat: repeat;
 	float: top;
 }

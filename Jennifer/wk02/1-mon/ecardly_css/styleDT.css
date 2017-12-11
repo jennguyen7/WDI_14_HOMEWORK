@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+.firstIm {
+	display: block;
+	margin: 0 auto;
+}
+
+.container {
+	background-color: mistyrose;
+	width: 80%;
+	margin: 0 auto;
+}
+
+main {
+	padding: 20px;
+	display: inline-block;
+	background-color: lightgreen;
+	width: 60%;
+}
+
+article {
+	margin-bottom: 40px;
+}
+
+article: last-child {
+	margin-bottom: 0px;
+}
+
+aside {
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: plum;
+	width: 38%;
+
+}
+
+
+article img {
+	width: 100%;
+}
+
+aside img {
+	width: 100%;
+}
+
+article > footer {
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+}
