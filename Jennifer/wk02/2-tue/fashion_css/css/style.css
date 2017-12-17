@@ -1,5 +1,73 @@
+* {
+	box-sizing: border-box;
+}
 
+.heading1 {
+	color: red;
+	font-size: 40px;
+}
 
-nav ul {
+.heading2 {
+	color: gray;
+}
+
+.topNav, .bottomNav {
 	list-style-type: none;
+	width: 100%;
+}
+
+.topNav li {
+	display: inline-block;
+	height: 50px;
+	font: 20px arial, sans-serif;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
+
+
+.container1{
+	display: inline-block;
+	width: 75%;
+	padding: 0 4%;
+}
+
+.container2 {
+	display: inline-block;
+	width: 20%;
+	padding: 0 2%;
+	vertical-align: top;
+}
+
+.fstImg, .secImg {
+	width: 100%
+}
+
+.capLetter {
+	float: left;
+	width: 10%;
+	height: 10%;
+	font-size: 30px;
+}
+
+.nextCap {
+	float: right;
+	vertical-align: top;
+}
+
+.popPosts {
+	height: 300px;
+}
+
+.asideAd {
+	height: 300px;
+}
+
+.bottomNav li {
+	display: inline-block;
+	padding: 0 1%;
+	font: 20px arial, sans-serif;
+	font-weight: bold;
+	background-color: black;
+	color: white;
 }
