@@ -125,8 +125,10 @@ users = {
 #users["Erik"][favorite_numbers].min
 
 #How would you return an array of Anil's favorite numbers that are also even?
+new_fave = []
 users["Anil"][:favorite_numbers].each do |value|
-  if value.even? 
+  if value.even?
+    new_fave.push(value) 
     puts value
   end
 end
