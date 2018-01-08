@@ -1,0 +1,19 @@
+body {
+	background-image: url("/background_img.jpg");
+}
+
+.top_middle {
+	display: inline-block;
+	text-align: center;
+}
+
+.poster_img {
+	display: inline block;
+}
+
+.information {
+	height: 100px;
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+}
