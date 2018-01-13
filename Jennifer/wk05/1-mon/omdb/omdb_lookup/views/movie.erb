@@ -1,18 +1,21 @@
-<h1>Movie Information</h1>
+<h1>Movie List Information</h1>
 
-<div class="top_middle">
-	<h1><%= @title %></h1>
-	<h3><%= @year %></h3>
-</div>
+<ul>
+<% @hash.each do |movie| %>
+	<a href="/moviedetail?i=<%= movie["imdbID"]%>">
+		<li><%= movie["Title"] %></li>
+	</a>
+	
+<% end %>
+</ul>
 
-<img class="poster_img" src="<%= @poster %>">
 
-<div class="information">
-	<%= @released %>
-	<%= @runtime %>
-	<%= @actors %>
-	<%= @ratings %>
-</div>
+
+
+
+
+
+
 
 
 
