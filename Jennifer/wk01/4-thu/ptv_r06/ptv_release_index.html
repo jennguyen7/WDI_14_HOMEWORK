@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Melbourne Train, Ver 06</title>
+    </head>
+    
+    <style>
+        form  { display: table;      }
+        pp    { display: table-row;  } /*another name for tag <p> */
+        label { display: table-cell; padding-right:10px;}
+        input { display: table-cell; }
+    </style>
+    
+    <form id="frm1" action="/action_page.php"><br>
+        <!-- Origin:     <input type="text" name="origin"><br>
+        Destination: <input type="text" name="destination"><br><br> -->
+        <pp>
+            <label for="origin">Origin: </label>
+            <input type="text">
+        </pp>
+        <pp>
+            <label for="destination">Destination:</label>
+            <input type="text">
+        </pp><br>
+
+        </form> 
+
+    <p>Endter Origin and Destination then Click "Find Route" to display the journey.</p>
+
+    <!-- when click button Find Route, it will call function find_route()
+        when click button reset, it will call function reset_all()
+    -->
+    
+    <button onclick="find_route()">Find Route</button>
+    <button onclick="reset_all()">Reset</button>
+    <p id="demo"></p>
+    
+    <body>
+        <script src="ptv_release.js"></script> 
+    </body>
+</html>
