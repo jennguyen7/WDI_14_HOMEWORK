@@ -31,38 +31,7 @@ var toggleCity = function(event) {
 	document.body.className = "";
 	}	
 
-	if (select.selectedOptions[0].label === newOption1.label) {
-		document.body.classList.add("austin");
-	} else if (select.selectedOptions[0].label === newOption2.label) {
-		document.body.classList.add("la");
-	} else if (select.selectedOptions[0].label === newOption3.label) {
-		document.body.classList.add("nyc");
-	} else if (select.selectedOptions[0].label === newOption4.label) {
-		document.body.classList.add("sf");
-	} else {
-		document.body.classList.add("sydney");
-	};
-
-};
-
-
-
-//returns an array NodeList(6) = [option,option,option,option,option,option]
-//use forEach to iterate
-//It is an array of objects
-//var allOptions = document.querySelectorAll("city-type");
-//this is the same:
-//document.getElementsByTagName("OPTION");
-
-//allOptions.forEach(function(option){
-	select.addEventListener("change", toggleCity);
-//});
-
-
-/*
-	var p = document.getElementsByTagName("OPTION").attribute("label").value
-
-	switch(p) {
+		switch(select.selectedOptions[0].label) {
 		case "Austin":
 		document.body.classList.add("austin");
 		break;
@@ -84,5 +53,39 @@ var toggleCity = function(event) {
 		break;
 	}
 
+/*
+	if (select.selectedOptions[0].label === newOption1.label) {
+		document.body.classList.add("austin");
+	} else if (select.selectedOptions[0].label === newOption2.label) {
+		document.body.classList.add("la");
+	} else if (select.selectedOptions[0].label === newOption3.label) {
+		document.body.classList.add("nyc");
+	} else if (select.selectedOptions[0].label === newOption4.label) {
+		document.body.classList.add("sf");
+	} else {
+		document.body.classList.add("sydney");
+	};
 */
+
+};
+
+
+
+//returns an array NodeList(6) = [option,option,option,option,option,option]
+//use forEach to iterate
+//It is an array of objects
+//var allOptions = document.querySelectorAll("city-type");
+//this is the same:
+//document.getElementsByTagName("OPTION");
+
+//allOptions.forEach(function(option){
+	select.addEventListener("change", toggleCity);
+//});
+
+
+
+	
+
+
+
 
