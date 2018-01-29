@@ -1,0 +1,9 @@
+<h1>Submit a Project</h1>
+
+<form action="/projects" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label>title</label>
+	<input type="text" name="title">
+	<input type="file" name="preview">
+	<button>post</button>
+</form>

@@ -1,0 +1,54 @@
+label, input {
+	display: block;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper {
+	width: 300px;
+	border: 3px solid black;
+	position: relative;
+}
+
+.wrapper span {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 20px;
+	color: red;
+}
+
+.project {
+	width: 50%;
+	/*float: left;*/
+	background-color: mistyrose;
+}
+
+.project h2 {
+	display: none;
+}
+
+.project img {
+	display: block; /* space under image- doing this will make it no space */
+}
+
+@media (min-width: 700px) {
+	.project {
+		width: 33.33333%; 
+	}
+
+	.project h2 {
+		display: block;
+	}
+}
+
+/*
+@media (min-width: 1000px) {
+	.project {
+		width: 25%; /*gives you 4 columns on the screen*/
+	}
+}
+*/

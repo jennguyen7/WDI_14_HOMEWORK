@@ -1,0 +1,41 @@
+<div class="project_details">
+	<h1>Project: <%= @project.title %></h1>
+	<div class="wrapper">
+		<img src="<%= @project.preview.url %>">
+		<span class="heart">&#9825;</span>
+	</div>
+
+	<form action="/likes" method="post">
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<input type="hidden" name="project_id" value="<%= @project.id %>">
+		<span class="countHearts"><%= @project.likes.count %></span>
+		<button>Like</button>
+	</form>
+
+
+	<form action="/comments" method="post">
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<%#= sending id to the server but the user doesn't need to know %>
+		<input type="hidden" name="project_id" value="<%= @project.id %>">
+		<textarea name="body" cols="30" rows="10"></textarea>
+		<button>post comment</button>
+	</form>
+
+	<% @comments.each do |comment| %>
+		<hr>
+		<p><%= comment.body %></p>
+		<p><%= comment.user.email %></p>
+
+	<% end %>
+
+</div>
+
+<script type="text/javascript">
+	var heart = document.querySelector('.heart');
+
+	heart.addEventListener('click', function(event) {
+		var heartN = event.target.closest('.project_details')
+		var heartCount = heartN.querySelector('.countHearts');
+		heartCount.textContent++;
+	})
+</script>
