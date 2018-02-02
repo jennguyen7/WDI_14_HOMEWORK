@@ -17,7 +17,7 @@ class PokemonsController < ApplicationController
 		pokemon.nickname = params[:nickname]
 		pokemon.level = params[:level]
 		pokemon.save
-		redirect_to '/'
+		redirect_to '/pokemons'
 	end
 
 	def edit
@@ -28,6 +28,7 @@ class PokemonsController < ApplicationController
 		@pokemon = Pokemon.find(params[:id])
 		@pokemon.species = params[:species]
 		@pokemon.nickname = params[:nickname]
+		@pokemon.level = params[:level]
 		@pokemon.save
 		redirect_to "/pokemons/#{params[:id]}"
 	end
