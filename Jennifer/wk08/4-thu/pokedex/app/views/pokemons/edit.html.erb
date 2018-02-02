@@ -1,0 +1,17 @@
+<h1>Edit Pokemon</h1>
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="hidden" name="_method" value="put">
+	<label>nickname</label>
+	<input type="text" name="nickname" value="<%= @pokemon.nickname %>">
+	<label>level</label>
+	<label>species</label>
+	<input type="text" name="species" value="<%= @pokemon.species %>">
+	<label>level</label>
+	<input type="integer" name="level" value="<%= @pokemon.level %>">
+	<button>update</button>
+</form>
+	
+</form>
+
+

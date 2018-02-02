@@ -1,0 +1,9 @@
+<h2>Individual Pokemon Page!</h2>
+
+<h1>My name is <%= @pokemon.nickname %></h1>
+<h4>I am a <%= @pokemon.species%></h4>
+<h4>I am at level <%= @pokemon.level %></h4>
+
+<a href="/pokemons/<%= @pokemon.id %>/edit">edit</a>
+
+<a href="/pokemons/new">add a new pokemon</a>

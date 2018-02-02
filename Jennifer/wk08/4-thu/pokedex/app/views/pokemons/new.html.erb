@@ -1,0 +1,12 @@
+<h2>Add a New Pokemon!</h2>
+<form action:"/pokemons" method:"post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="hidden" name="_method" value="post">
+	<label>Nickname:</label>
+	<input type="text" name="nickname">
+	<label>Species:</label>
+	<input type="text" name="species">
+	<label>Level:</label>
+	<input type="integer" name="level">
+	<button>Add Me Now!</button>
+</form>
