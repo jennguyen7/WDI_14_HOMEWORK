@@ -1,30 +1,62 @@
 console.log("You have savings");
 
-var inputAmount = document.querySelector(".input");
+//savings account
+var inputAmountS = document.querySelector(".inputSavings");
 
-var span = document.querySelector("span");
+var spanS = document.querySelector(".spanSavings");
 
-var depositBtn = document.querySelector(".deposit");
+var depositBtnS = document.querySelector(".depositSavings");
 
-var withdrawBtn = document.querySelector(".withdraw");
+var withdrawBtnS = document.querySelector(".withdrawSavings");
 
+//checking account
+var inputAmountC = document.querySelector(".inputChecking");
 
-function add() {
-	var result = Number(inputAmount.value) + Number(span.textContent);
+var spanC = document.querySelector(".spanChecking");
 
-	span.textContent = result;
-	console.log(result);
+var depositBtnC = document.querySelector(".depositChecking");
+
+var withdrawBtnC = document.querySelector(".withdrawChecking");
+
+//savings account
+function addS() {
+	var resultS = Number(inputAmountS.value) + Number(spanS.textContent);
+
+	spanS.textContent = resultS;
+	console.log(resultS);
 
 }
 
- var result = depositBtn.addEventListener("click", add);
+ var resultS = depositBtnS.addEventListener("click", addS);
 
 
-function subtract() {
-	var result = Number(span.textContent) - Number(inputAmount.value);
+function subtractS() {
+	var resultS = Number(spanS.textContent) - Number(inputAmountS.value);
 
-	span.textContent = result;
-	console.log(result);
+	spanS.textContent = resultS;
+	console.log(resultS);
 }
 
-withdrawBtn.addEventListener("click", subtract);
+withdrawBtnS.addEventListener("click", subtractS);
+
+// //checking account
+function addC() {
+	var resultC = Number(inputAmountC.value) + Number(spanC.textContent);
+
+	spanC.textContent = resultC;
+	console.log(resultC);
+
+}
+
+ var resultC = depositBtnC.addEventListener("click", addC);
+
+
+function subtractC() {
+	var resultC = Number(spanC.textContent) - Number(inputAmountC.value);
+
+	spanC.textContent = resultC;
+	console.log(resultC);
+}
+
+withdrawBtnC.addEventListener("click", subtractC);
+
