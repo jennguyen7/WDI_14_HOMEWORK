@@ -37,26 +37,56 @@ Does your calculator allows addition of more then 2 numbers in one go? eg: 2 + 3
 #choose another number ELSE evaluate
 
 
-require "pry"
+# def calculator
+#     puts "what operators do you want to use(+,-,*,/,**,sqrt,quit)?"
+#     op = gets.chomp
+#
+#     while op != 'quit'
+#         puts "type the first number"
+#         first_num = gets.chomp.to_i
+#         puts "type the second number.(if you select sqrt, never mind ths)"
+#         second_num = gets.chomp.to_i
+#
+#         case op
+#          when '+'
+#            result = first_num + second_num
+#          when '-'
+#            result = first_num - second_num
+#          when '*'
+#            result = first_num * second_num
+#          when '/'
+#            result = first_num / second_num
+#          when '**'
+#            result = first_num ** second_num
+#         when 'sqrt'
+#           result = Math.sqrt(first_num)
+#         end
+#         puts "result is #{result}"
+#
+#         puts "what operators do you want to use(+,-,*,/,**,sqrt,quit)?"
+#         op = gets.chomp
+#     end
+# end
+# calculator
 
-puts "Please enter number"
-initial_input = gets
+def multi_calculation
+  puts "what operators do you want to use(+,-,*,/,**,sqrt,quit)?" # 2 + 2 * 3
+  op = gets.chomp.gsub(/\s+/,"").split('')
 
-puts "What operator would you like to choose? + - * /"
-operators = ["+", "-", "*", "/", "="]
-operator_input = gets
-if operators[operator_input].nil?
-	puts "Choose again"
-else
-	puts "Is there another number?"
-	next_number = gets
-	if next_number isn't a number
-		puts "Choose again"
-	else 
-		return initial_input + operator.to_sym + next_number
-
-binding.pry
-
+  new_arr = []
+  op.each do |elem|
+    if elem.match(/\d/)
+      elem = elem.to_i
+      new_arr << elem
+    elsif elem == "+"
+      r = '+'.to_sym
+      p r
+    end
+  end
+  p new_arr
+  # p new_arr.inject(r)
+end
+multi_calculation
 
 
 
