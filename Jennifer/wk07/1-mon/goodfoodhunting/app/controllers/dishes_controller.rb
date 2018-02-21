@@ -18,6 +18,16 @@ class DishesController < ApplicationController
 		redirect_to '/dishes'
 	end
 
+	def edit
+		@dish = Dish.find(params[:id])
+	end
+	
+	def update
+		@dish = Dish.find(params[:id])
+		@dish.name = params[:name]
+		@dish.save
+		redirect_to "/dishes/#{params[:id]}"
+	end
 	def destroy
 		@dish = Dish.find(params[:id])
 		if @dish.destroy
@@ -28,3 +38,4 @@ class DishesController < ApplicationController
 	end
 
 end
+

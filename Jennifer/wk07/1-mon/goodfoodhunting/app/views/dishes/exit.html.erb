@@ -1,0 +1,10 @@
+<h1>Edit Your Dishes</h1>
+<form action="/dishes/<%= @dishes.id %>" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="hidden" name="_method" value="put">
+	<label>name</label>
+	<input type="text" name="name" value="<%= @pokemon.name %>">
+	<button>update</button>
+</form>
+	
+</form>
