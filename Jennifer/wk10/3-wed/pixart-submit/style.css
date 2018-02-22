@@ -1,0 +1,14 @@
+.brush-box {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+}
+
+.square {
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+}
